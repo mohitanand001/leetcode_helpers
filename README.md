@@ -1,2 +1,3 @@
 # leetcode_helpers
-![emaxx algorithms notebook](https://cp-algorithms.com/)
+[emaxx algorithms notebook](https://cp-algorithms.com/)
+
