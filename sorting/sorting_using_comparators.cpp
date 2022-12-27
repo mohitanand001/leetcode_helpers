@@ -27,6 +27,11 @@ bool compare(pair<int, int> &p1, pair<int, int> &p2)
     return p1.first < p2.first;
 }
 
+vector<int> sortor(vector<int> &v)
+{
+	sort(v.begin(), v.end());
+	return v;
+}
 
 int main()
 {
