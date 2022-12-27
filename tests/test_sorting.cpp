@@ -2,7 +2,7 @@
 #include "../sorting/sorting_for_testing.cpp"
 using namespace std;
 
-vector<int> sortor(vector<int> &v);
+// vector<int> sortor(vector<int> &v);
 
 int main()
 {
