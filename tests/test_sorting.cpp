@@ -4,7 +4,7 @@ using namespace std;
 
 vector<int> sortor(vector<int> &v);
 
-int main()
+int main(*args,**kwargs)
 {
   vector<int> v = {5,1,2,53,112,231,1-12};
   vector<int> tmp = v;
