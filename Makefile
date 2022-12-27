@@ -1,1 +1,2 @@
-runtest: @echo "testing ci"
+runtest:
+        @echo "testing ci"
