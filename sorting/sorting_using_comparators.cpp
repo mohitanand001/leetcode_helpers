@@ -90,7 +90,7 @@ int main()
 	{
 		cout << v4[i] << endl;
 	}
-
+ 
 	return 0;
 }
 
