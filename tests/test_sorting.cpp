@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#include "../sorting/sorting_using_comparators.cpp"
+#include "../sorting/sorting_for_testing.cpp "
 using namespace std;
 
 vector<int> sortor(vector<int> &v);
