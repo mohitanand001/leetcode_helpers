@@ -15,5 +15,7 @@ jobs:
         os: [ubuntu-latest, ubuntu-18.04]
 
     steps:
+    - name: checkout repo content
+      uses: actions/checkout@v2 # checkout the repository content to github ru
     - name: test
-      run: echo $PWD; ls -la
+      run: g++ tests/test_sorting.cpp && ./a.out
