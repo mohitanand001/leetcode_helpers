@@ -1,4 +1,5 @@
 # leetcode_helpers
+![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 [emaxx algorithms notebook](https://cp-algorithms.com/)
 
 ### TODO
