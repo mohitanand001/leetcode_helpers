@@ -1,5 +1,5 @@
 # leetcode_helpers
-![w1](https://github.com/github/docs/actions/workflows/main.yml/badge.svg) <br>
+![main](https://github.com/mohitanand001/leetcode_helpers/actions/workflows/main.yml/badge.svg) <br>
 [emaxx algorithms notebook](https://cp-algorithms.com/)
 
 ### TODO
