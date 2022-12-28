@@ -13,7 +13,7 @@ int sm(int a, int b)
 int main()
 {
 	int c = sm(1,5);
-	assert(61 == c); 
+	assert(6 == c); 
 	
 	return 0;
 
