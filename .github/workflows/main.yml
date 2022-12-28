@@ -16,4 +16,4 @@ jobs:
 
     steps:
     - name: test
-      run: echo $PWD
+      run: echo $PWD; ls -la
