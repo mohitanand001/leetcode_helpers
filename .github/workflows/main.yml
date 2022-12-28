@@ -16,4 +16,4 @@ jobs:
 
     steps:
     - name: test
-      run: make runtest
+      run: g++ tests/test_sorting.cpp && ./a.out
