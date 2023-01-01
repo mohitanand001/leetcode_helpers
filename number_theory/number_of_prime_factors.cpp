@@ -11,20 +11,23 @@ int get_no_of_prime_divisors(int n)
         if(n % j == 0)
         {
             cnt++;
-            while(nums[i] and nums[i] % j == 0)
+            while(n and n % j == 0)
             {
-                nums[i] = nums[i] / j;
+                n = n / j;
             }                    
 
         }
     }
-    if(nums[i] > 1)
+    if(n > 1)
         cnt++;
+
+    return cnt;
 }
 
 
 int main()
 {
+  cout << get_no_of_prime_divisors(7) << endl;
   cout << get_no_of_prime_divisors(100) << endl;
   
   return 0;
