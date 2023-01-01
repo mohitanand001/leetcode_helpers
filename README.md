@@ -21,6 +21,14 @@ Observations:
    `dp[i][j] = INT_MIN` or to be safe use a diff `vector<vector<bool> > vis` and set `vis[i][j] = false` to denote an invalid state.
 
 
+### Number Theory
+1. There is at max 1 prime divisor of a greater than sqrt(n), in which case the number n is prime.
+   Proof by contracdition, if there are 2 prime divisors of n, greater than sqrt(n), lets say X and Y.
+   The prime factorization of n will be p1 * p2 * p3 * X * p4 * Y * .. * pk
+   if we multiply them i.e. X*Y, we will get a number bigger than n, since X (> sqrt(n)) * Y > (sqrt(n)) => XY (> n).
+   Notice that we cannot say the same thing about the "divisor" of a number.
+   ex: n = 36,sqrt(n) = 6, we have 4 divisors of 36, i.e. 9, 12, 18 and 36 which are >= 6. 
+
 
 ### STL
 1. map<int, int> mp; 
