@@ -1,5 +1,8 @@
 // https://leetcode.com/problems/closest-prime-numbers-in-range/submissions/869189283/
 // https://www.youtube.com/watch?v=pKvGYOnO9Ao&ab_channel=TECHDOSE
+// TC: Nlog(logN), see the video from the following timestamp
+// https://youtu.be/pKvGYOnO9Ao?t=524
+
 #include <bits/stdc++.h>
 using namespace std;
 
