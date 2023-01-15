@@ -30,6 +30,11 @@ Observations:
    ex: n = 36,sqrt(n) = 6, we have 4 divisors of 36, i.e. 9, 12, 18 and 36 which are >= 6. 
 
 
+### Sliding windows
+1. whenever there is a question for subarrays think about sliding window. If the question is to find number of subarrays with 
+   at least X (>= X), find the number of subarrays with > X, and then subtract from total number of subarrays possible.
+   https://leetcode.com/contest/weekly-contest-328/problems/count-the-number-of-good-subarrays/
+
 ### STL
 1. map<int, int> mp; 
    auto it = mp.begin(); it is an iterator(sort of a wrapper around the pointer)
