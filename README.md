@@ -34,6 +34,49 @@ Observations:
 1. whenever there is a question for subarrays think about sliding window. If the question is to find number of subarrays with 
    at least X (>= X), find the number of subarrays with > X, and then subtract from total number of subarrays possible.
    https://leetcode.com/contest/weekly-contest-328/problems/count-the-number-of-good-subarrays/
+   
+2. To find the window of size k with the maximum product in an array, you can use a sliding window approach. Here's one way to implement it in C++,all numbers are greater than 0, and we need to just have the range of subarray, not the actual product.
+```cpp
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+using namespace std;
+
+pair<int, int> maxProductSubarray(vector<int>& nums, int k) {
+    int n = nums.size();
+    double maxLogProd = -INFINITY;
+    int left = 0, right = 0;
+    double currLogProd = 0;
+
+    while (right < n) {
+        currLogProd += log(nums[right]);
+        if (right - left + 1 == k) {
+            if (currLogProd > maxLogProd) {
+                maxLogProd = currLogProd;
+                left++;
+            } else {
+                currLogProd -= log(nums[left]);
+                left++;
+            }
+        }
+        right++;
+    }
+
+    int start = left - k;
+    int end = left - 1;
+    return make_pair(start, end);
+}
+
+int main() {
+    vector<int> nums = {1, 2, 3, 4, 5};
+    int k = 3;
+    pair<int, int> range = maxProductSubarray(nums, k);
+    cout << "Subarray range with maximum product: [" << range.first << ", " << range.second << "]" << endl;
+    return 0;
+}
+
+```
 
 ### STL
 1. map<int, int> mp; 
