@@ -32,8 +32,17 @@ Observations:
 ### Random questions
 1. Minimum number of operations to make all the numbers in an array equal, if in a single operation
 we can increase or decrease the elements.
-sort the array
-take the median, then calculate the sum of abs(median - arr[i]) to find the 
+   1. sort the array
+   2.take the median
+   3. then calculate the sum of abs(median - arr[i]) to find the min operations
+
+2. Find out the number of substrings such that frequency of all the elements are even (this question can be modified in many forms)
+   If the elements of the list are guaranteed to be in a limited range like 0-9 or 'a'-'z', then we can maintain a
+   vector to store the frequency of elements %2 from 0...i, i.e. (0, 1, 0, 0, 1) if range of numbers is from 0 to 4 and
+   frequency of 0 = 4 (4%2=0), frequency of 1 = 5 (5%2=1), and so on. It's guaranteed that a substring will contain even frequency
+   iff we find (0, 1, 0, 0, 1) again. we can use map<vector<int>, int> mp to store the values.
+   https://atcoder.jp/contests/abc295/tasks/abc295_d
+   
 
 
 ### Sliding windows
