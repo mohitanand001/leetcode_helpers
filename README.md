@@ -29,6 +29,12 @@ Observations:
    Notice that we cannot say the same thing about the "divisor" of a number.
    ex: n = 36,sqrt(n) = 6, we have 4 divisors of 36, i.e. 9, 12, 18 and 36 which are >= 6. 
 
+### Random questions
+1. Minimum number of operations to make all the numbers in an array equal, if in a single operation
+we can increase or decrease the elements.
+sort the array
+take the median, then calculate the sum of abs(median - arr[i]) to find the 
+
 
 ### Sliding windows
 1. whenever there is a question for subarrays think about sliding window. If the question is to find number of subarrays with 
