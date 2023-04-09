@@ -28,6 +28,22 @@ Observations:
    if we multiply them i.e. X*Y, we will get a number bigger than n, since X (> sqrt(n)) * Y > (sqrt(n)) => XY (> n).
    Notice that we cannot say the same thing about the "divisor" of a number.
    ex: n = 36,sqrt(n) = 6, we have 4 divisors of 36, i.e. 9, 12, 18 and 36 which are >= 6. 
+2. check if a number is prime or not TC(sqrt(n))
+```cpp
+bool is_prime(long long x)
+{
+   if(x <= 1)
+      return false;
+    
+    for(long long i = 2; i * i <= x; i++)
+    {
+      if(x % i == 0)
+         return false;
+    }
+    return true;
+}
+```
+
 
 ### Random questions
 1. Minimum number of operations to make all the numbers in an array equal, if in a single operation
